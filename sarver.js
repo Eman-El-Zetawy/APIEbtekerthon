@@ -59,25 +59,25 @@ app.get('/home', (req, res) =>{
       });
   });
 
-  app.get('/contactp', (req, res) =>{
-    con.query("SELECT * FROM  ebtekarthon.contactp", function (err, result) {
-    if (err) throw err ; 
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "*");
-    console.log(result);
-      res.send(result);
-    });
-});
+//   app.get('/contactp', (req, res) =>{
+//     con.query("SELECT * FROM  ebtekarthon.contactp", function (err, result) {
+//     if (err) throw err ; 
+//     res.header("Access-Control-Allow-Origin", "*");
+//     res.header("Access-Control-Allow-Headers", "*");
+//     console.log(result);
+//       res.send(result);
+//     });
+// });
 
-app.get('/contacts', (req, res) =>{
-  con.query("SELECT * FROM  ebtekarthon.contacts", function (err, result) {
-  if (err) throw err ; 
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "*");
-  console.log(result);
-    res.send(result);
-  });
-});
+// app.get('/contact', (req, res) =>{
+//   con.query("SELECT * FROM  ebtekarthon.contacts", function (err, result) {
+//   if (err) throw err ; 
+//   res.header("Access-Control-Allow-Origin", "*");
+//   res.header("Access-Control-Allow-Headers", "*");
+//   console.log(result);
+//     res.send(result);
+//   });
+// });
 
 app.put('/about', (req, res) =>{
   let a = {
